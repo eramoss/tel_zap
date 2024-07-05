@@ -6,7 +6,7 @@ defmodule TelZap do
     import Supervisor.Spec, warn: false
 
     children = [
-      module: {TelZap.accept(4040), []}
+      module: {TelZap.accept(4000), []}
     ]
 
     opts = [strategy: :one_for_one, name: TelZap.Supervisor]
